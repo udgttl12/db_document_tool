@@ -1,0 +1,27 @@
+{
+  "profiles": [
+    {
+      "id": "academy-dev",
+      "label": "Academy DEV",
+      "engine": "mysql",
+      "url": "mysql+pymysql://user:password@localhost:3306",
+      "schemas": ["academy", "billing"],
+      "tags": ["dev", "academy"]
+    },
+    {
+      "id": "erp-prod",
+      "label": "ERP PROD",
+      "engine": "mysql",
+      "url": "mysql+pymysql://ro_user:password@localhost:3306",
+      "schemas": ["academy", "counsel", "materials"],
+      "tags": ["prod", "erp"]
+    }
+  ],
+  "options": {
+    "defaultInclude": ".*",
+    "defaultExclude": "_history$|_backup$",
+    "domainPrefixes": ["user_", "course_", "billing_", "counsel_", "materials_"],
+    "fetchComments": true,
+    "timeoutSeconds": 60
+  }
+}

@@ -1,0 +1,22 @@
+# DB 연결
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+psycopg2-binary>=2.9.0
+cx-oracle>=8.3.0
+
+# 웹 프레임워크
+streamlit>=1.30.0
+
+# 데이터 처리
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# 템플릿 엔진
+jinja2>=3.1.0
+
+# PDF 생성
+weasyprint>=60.0
+
+# 유틸리티
+python-dotenv>=1.0.0
+pyyaml>=6.0
