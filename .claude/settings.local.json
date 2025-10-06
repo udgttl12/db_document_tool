@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git log:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: DB 명세서 & ERD 자동화 플랫폼 v1.0 구현\n\n멀티 DB 지원 스키마 분석 및 문서 자동 생성 시스템 구축\n\n주요 기능:\n- JSON 기반 멀티 DB 프로필 관리\n- SQLAlchemy Inspector를 통한 자동 스키마 분석\n- Mermaid ERD 생성 (FK 관계 기반)\n- 컬럼명 패턴 기반 자동 한글 코멘트 생성\n- 4가지 포맷 문서화 (Excel, Markdown, HTML, PDF)\n- 스냅샷 & Diff 기능으로 환경 간 스키마 비교\n- 도메인 접두사 기반 ERD 분할\n- Streamlit 기반 웹 UI\n\n기술 스택:\n- SQLAlchemy 2.0+ (다중 DB 연결)\n- Streamlit 1.30+ (웹 UI)\n- Pandas + Openpyxl (Excel 생성)\n- Jinja2 (HTML 템플릿)\n- WeasyPrint (PDF 변환)\n- Mermaid (ERD 시각화)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
